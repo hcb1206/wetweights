@@ -10,7 +10,7 @@ library(data.table)
 library(ggplot2)
 
 ## here are the names of all the other generation files we want to read in:
-gens <- paste("C", 22:33, sep = "") #add new generations by expanding x:y range
+gens <- paste("C", 22:34, sep = "") #add new generations by expanding x:y range
 tables <- paste0("weight_",gens)
 tables <- list(tables)
 
@@ -40,4 +40,5 @@ weight <- weight[,3:7]
 
 ##let's save this file
 write.xlsx(weight, "C:/Users/Hannah/Documents/R/github/wetweights/masterWetWeight.xlsx")
+write.xlsx(weight, "F:/Cultivation/Post Harvest Stuff/masterWetWeight.xlsx")
 
